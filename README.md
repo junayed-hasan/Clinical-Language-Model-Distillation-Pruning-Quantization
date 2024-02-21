@@ -3,6 +3,7 @@
 
 ## Introduction
 This repository contains the implementation of OptimCLM, a framework designed to optimize Clinical Language Models (CLMs) for predicting patient outcomes through knowledge distillation, pruning, and quantization. The approach compresses CLMs without significant performance loss, thus facilitating their deployment in real-world clinical applications. This project uses admission notes from the MIMIC-III clinical database for the four clinical predictive tasks: mortality prediction, length of stay prediction, procedure prediction and diagnosis prediction. This repository contains the necessary codes for the length of stay prediction task. Other tasks can be similarly reproduced. The following diagram shows the motivation behind the research:
+
 ![Motivation of the reseach](Figures/motivation.png)
 
 
@@ -56,7 +57,10 @@ In the Jupyter interface, navigate to and open LOS_Ensemble.ipynb, run the noteb
 
 Similarly, navigate to and open LOS_Optimization.ipynb, run the notebook cells sequentially to load the weights of the ensemble, fine-tune the student model, save the weights, load them, apply pruning, quantization and get evaluation results.
 
-## The methodology followed is shown in the following diagram:
+## Methods
+
+The methodology followed is shown in the following diagram:
+
 ![OptimCLM Framework Architecture](Figures/archi.png)
 
 ## Results
