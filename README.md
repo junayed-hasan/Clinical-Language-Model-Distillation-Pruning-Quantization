@@ -2,9 +2,10 @@
 
 
 ## Introduction
-This repository contains the implementation of OptimCLM, a framework designed to optimize Clinical Language Models (CLMs) for predicting patient outcomes through knowledge distillation, pruning, and quantization. The approach compresses CLMs without significant performance loss, thus facilitating their deployment in real-world clinical applications. This project uses admission notes from the MIMIC-III clinical database for the four clinical predictive tasks: mortality prediction, length of stay prediction, procedure prediction and diagnosis prediction. This repository contains the necessary codes for the length of stay prediction task. Other tasks can be similarly reproduced.
+This repository contains the implementation of OptimCLM, a framework designed to optimize Clinical Language Models (CLMs) for predicting patient outcomes through knowledge distillation, pruning, and quantization. The approach compresses CLMs without significant performance loss, thus facilitating their deployment in real-world clinical applications. This project uses admission notes from the MIMIC-III clinical database for the four clinical predictive tasks: mortality prediction, length of stay prediction, procedure prediction and diagnosis prediction. This repository contains the necessary codes for the length of stay prediction task. Other tasks can be similarly reproduced. The following diagram shows the motivation behind the research:
+![Motivation of the reseach](Figures/motivation.png)
 
-![OptimCLM Framework Architecture](Figures/archi.png)
+
 
 ## Highlights
 - Integration of clinical outcome prediction across the patient healthcare journey.
@@ -55,6 +56,8 @@ In the Jupyter interface, navigate to and open LOS_Ensemble.ipynb, run the noteb
 
 Similarly, navigate to and open LOS_Optimization.ipynb, run the notebook cells sequentially to load the weights of the ensemble, fine-tune the student model, save the weights, load them, apply pruning, quantization and get evaluation results.
 
+## The methodology followed is shown in the following diagram:
+![OptimCLM Framework Architecture](Figures/archi.png)
 
 ## Results
 
@@ -137,7 +140,8 @@ The table below presents the model compression statistics by TinyBERT in all the
 |                                 | PROC | 110 ± 4            | 25.43×  | 13.5       | 37.87    | 22.88 (11.44)     |
 |                                 | DIAG | 107 ± 1            | 25.69×  | 13.5       | 37.87    | 22.88 (11.44)     |
 
-
+## Training curves
+![Training curves of all the experiments](Figures/training_curves.png)
 
 ## Copyright and License
 
