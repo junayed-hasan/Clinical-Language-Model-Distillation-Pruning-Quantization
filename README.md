@@ -2,7 +2,7 @@
 
 
 ## Introduction
-This repository contains the implementation of OptimCLM, a framework designed to optimize Clinical Language Models (CLMs) for predicting patient outcomes through knowledge distillation, pruning, and quantization. The approach compresses CLMs without significant performance loss, thus facilitating their deployment in real-world clinical applications. This project uses admission notes from the MIMIC-III clinical database for the four clinical predictive tasks: mortality prediction, length of stay prediction, procedure prediction and diagnosis prediction. This repository contains the necessary codes for the length of stay prediction task. Other tasks can be similarly reproduced. The following diagram shows the motivation behind the research:
+This repository contains the implementation of OptimCLM, a framework designed to optimize Clinical Language Models (CLMs) for predicting patient outcomes through knowledge distillation, pruning, and quantization. The link to the pre-print version of the paper can be found [here](http://dx.doi.org/10.2139/ssrn.4797716). The approach compresses CLMs without significant performance loss, thus facilitating their deployment in real-world clinical applications. This project uses admission notes from the MIMIC-III clinical database for the four clinical predictive tasks: mortality prediction, length of stay prediction, procedure prediction and diagnosis prediction. This repository contains the necessary codes for the length of stay prediction task. Other tasks can be similarly reproduced. The following diagram shows the motivation behind the research:
 
 ![Motivation of the reseach](Figures/motivation.png)
 
